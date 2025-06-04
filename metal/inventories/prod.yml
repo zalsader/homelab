@@ -7,6 +7,6 @@ metal:
   children:
     masters:
       hosts:
-        metal0: {ansible_host: 192.168.0.110, mac: 'f8:b1:56:be:15:33', disk: sda, network_interface: eno1}
-        metal1: {ansible_host: 192.168.0.111, mac: '34:17:eb:a3:5c:3b', disk: sda, network_interface: eno1}
-        metal2: {ansible_host: 192.168.0.112, mac: 'TODO', disk: sda, network_interface: eno1}
+        tv: {ansible_host: 192.168.0.110, mac: 'f8:b1:56:be:15:33', disk: sda, network_interface: eno1}
+        plain: {ansible_host: 192.168.0.111, mac: '34:17:eb:a3:5c:3b', disk: sda, network_interface: eno1}
+        starwars: {ansible_host: 192.168.0.112, mac: 'b8:ca:3a:75:64:24', disk: sda, network_interface: eno1}
