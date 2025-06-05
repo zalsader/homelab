@@ -33,14 +33,14 @@ app-template:
       annotations:
         cert-manager.io/cluster-issuer: letsencrypt-prod
       hosts:
-        - host: &ollamaHost ollama.zalsader.com
+        - host: &ollamaHost ollama.lab.zalsader.com
           paths:
             - path: /
               pathType: Prefix
               service:
                 name: main
                 port: http
-        - host: &uiHost ai.zalsader.com
+        - host: &uiHost ai.lab.zalsader.com
           paths:
             - path: /
               pathType: Prefix

@@ -1,6 +1,6 @@
 argo-cd:
   global:
-    domain: argocd.zalsader.com
+    domain: argocd.lab.zalsader.com
   configs:
     params:
       server.insecure: true

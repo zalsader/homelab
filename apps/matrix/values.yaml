@@ -4,10 +4,10 @@ elementweb:
     className: nginx
     annotations:
       cert-manager.io/cluster-issuer: letsencrypt-prod
-      external-dns.alpha.kubernetes.io/target: "homelab-tunnel.zalsader.com"
+      external-dns.alpha.kubernetes.io/target: "homelab-tunnel.lab.zalsader.com"
       external-dns.alpha.kubernetes.io/cloudflare-proxied: "true"
     hosts:
-      - host: &frontend_host chat.zalsader.com
+      - host: &frontend_host chat.lab.zalsader.com
         paths:
           - path: /
             pathType: Prefix
@@ -17,22 +17,22 @@ elementweb:
           - *frontend_host
   config:
     default:
-      base_url: https://matrix.zalsader.com
-      server_name: zalsader.com
+      base_url: https://matrix.lab.zalsader.com
+      server_name: lab.zalsader.com
 
 dendrite:
   dendrite_config:
     global:
-      server_name: matrix.zalsader.com
+      server_name: matrix.lab.zalsader.com
   ingress:
     enabled: true
     className: nginx
     annotations:
       cert-manager.io/cluster-issuer: letsencrypt-prod
-    hostName: matrix.zalsader.com
+    hostName: matrix.lab.zalsader.com
     tls:
       - hosts:
-          - matrix.zalsader.com
+          - matrix.lab.zalsader.com
         secretName: matrix-tls-certificate
   postgresql:
     enabled: true

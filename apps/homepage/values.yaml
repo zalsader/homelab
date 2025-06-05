@@ -19,7 +19,7 @@ app-template:
       annotations:
         cert-manager.io/cluster-issuer: letsencrypt-prod
       hosts:
-        - host: &host home.zalsader.com
+        - host: &host home.lab.zalsader.com
           paths:
             - path: /
               pathType: Prefix
@@ -61,76 +61,76 @@ app-template:
         services.yaml: |
           - Popular:
             - Matrix:
-                href: https://chat.zalsader.com
+                href: https://chat.lab.zalsader.com
                 description: Chat client
                 icon: element.svg
             - Jellyfin:
-                href: https://jellyfin.zalsader.com
+                href: https://jellyfin.lab.zalsader.com
                 description: Media system (movies, music, etc.)
                 icon: jellyfin.svg
             - Jellyseerr:
-                href: https://jellyseerr.zalsader.com
+                href: https://jellyseerr.lab.zalsader.com
                 description: Request media
                 icon: jellyseerr.svg
             - Paperless:
-                href: https://paperless.zalsader.com
+                href: https://paperless.lab.zalsader.com
                 description: Document management system
                 icon: paperless.svg
           - Management:
             - Transmission:
-                href: https://transmission.zalsader.com
+                href: https://transmission.lab.zalsader.com
                 description: Bittorrent client
                 icon: transmission.svg
             - Prowlarr:
-                href: https://prowlarr.zalsader.com
+                href: https://prowlarr.lab.zalsader.com
                 description: Indexer manager
                 icon: prowlarr.svg
             - Radarr:
-                href: https://radarr.zalsader.com
+                href: https://radarr.lab.zalsader.com
                 description: Movie manager
                 icon: radarr.svg
             - Sonarr:
-                href: https://sonarr.zalsader.com
+                href: https://sonarr.lab.zalsader.com
                 description: TV show manager
                 icon: sonarr.svg
             - Kanidm:
-                href: https://auth.zalsader.com
+                href: https://auth.lab.zalsader.com
                 description: Identity management
-                icon: https://auth.zalsader.com/pkg/img/logo-square.svg
+                icon: https://auth.lab.zalsader.com/pkg/img/logo-square.svg
           - Development:
             - Gitea:
-                href: https://git.zalsader.com
+                href: https://git.lab.zalsader.com
                 description: Git forge
                 icon: gitea.svg
             - Woodpecker:
-                href: https://ci.zalsader.com
+                href: https://ci.lab.zalsader.com
                 description: Continuous integration
                 icon: woodpecker-ci.svg
             - ArgoCD:
-                href: https://argocd.zalsader.com
+                href: https://argocd.lab.zalsader.com
                 description: Continuous deployment
                 icon: argocd.svg
             - Registry:
-                href: https://registry.zalsader.com
+                href: https://registry.lab.zalsader.com
                 description: Container registry
                 icon: docker.svg
             - Grafana:
-                href: https://grafana.zalsader.com
+                href: https://grafana.lab.zalsader.com
                 description: Observability dashboards
                 icon: grafana.svg
           - Utilities:
             - Excalidraw:
-                href: https://draw.zalsader.com
+                href: https://draw.lab.zalsader.com
                 description: Virtual whiteboard
                 icon: excalidraw.svg
             - Speedtest:
-                href: https://speedtest.zalsader.com
+                href: https://speedtest.lab.zalsader.com
                 description: Internal network speed test
                 icon: openspeedtest.png
         bookmarks.yaml: |
           - Homelab:
             - Documentation:
-              - href: https://homelab.zalsader.com
+              - href: https://homelab.lab.zalsader.com
                 icon: google-docs.svg
             - Public homelab repository:
               - href: https://github.com/khuedoan/homelab

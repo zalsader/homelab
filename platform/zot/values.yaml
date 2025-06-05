@@ -6,7 +6,7 @@ zot:
       nginx.ingress.kubernetes.io/proxy-body-size: "0"
     className: nginx
     hosts:
-      - host: &host registry.zalsader.com
+      - host: &host registry.lab.zalsader.com
         paths:
           - path: /
     tls:

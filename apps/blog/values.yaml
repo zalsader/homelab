@@ -4,7 +4,7 @@ app-template:
       containers:
         main:
           image:
-            repository: registry.zalsader.com/blog
+            repository: registry.lab.zalsader.com/blog
             tag: latest
   service:
     main:
@@ -18,10 +18,10 @@ app-template:
       className: nginx
       annotations:
         cert-manager.io/cluster-issuer: letsencrypt-prod
-        external-dns.alpha.kubernetes.io/target: homelab-tunnel.zalsader.com
+        external-dns.alpha.kubernetes.io/target: homelab-tunnel.lab.zalsader.com
         external-dns.alpha.kubernetes.io/cloudflare-proxied: 'true'
       hosts:
-        - host: &host www.zalsader.com
+        - host: &host www.lab.zalsader.com
           paths:
             - path: /
               pathType: Prefix

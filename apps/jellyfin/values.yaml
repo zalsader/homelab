@@ -57,42 +57,42 @@ app-template:
       annotations:
         cert-manager.io/cluster-issuer: letsencrypt-prod
       hosts:
-        - host: &jellyfinHost jellyfin.zalsader.com
+        - host: &jellyfinHost jellyfin.lab.zalsader.com
           paths:
             - path: /
               pathType: Prefix
               service:
                 name: main
                 port: http
-        - host: &transmissionHost transmission.zalsader.com
+        - host: &transmissionHost transmission.lab.zalsader.com
           paths:
             - path: /
               pathType: Prefix
               service:
                 name: main
                 port: transmission
-        - host: &prowlarrHost prowlarr.zalsader.com
+        - host: &prowlarrHost prowlarr.lab.zalsader.com
           paths:
             - path: /
               pathType: Prefix
               service:
                 name: main
                 port: prowlarr
-        - host: &radarrHost radarr.zalsader.com
+        - host: &radarrHost radarr.lab.zalsader.com
           paths:
             - path: /
               pathType: Prefix
               service:
                 name: main
                 port: radarr
-        - host: &sonarrHost sonarr.zalsader.com
+        - host: &sonarrHost sonarr.lab.zalsader.com
           paths:
             - path: /
               pathType: Prefix
               service:
                 name: main
                 port: sonarr
-        - host: &jellyseerrHost jellyseerr.zalsader.com
+        - host: &jellyseerrHost jellyseerr.lab.zalsader.com
           paths:
             - path: /
               pathType: Prefix

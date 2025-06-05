@@ -1,6 +1,6 @@
 dex:
   config:
-    issuer: https://dex.zalsader.com
+    issuer: https://dex.lab.zalsader.com
     storage:
       type: kubernetes
       config:
@@ -14,8 +14,8 @@ dex:
         config:
           clientID: $KANIDM_CLIENT_ID
           clientSecret: $KANIDM_CLIENT_SECRET
-          redirectURI: https://dex.zalsader.com/callback
-          issuer: https://auth.zalsader.com/oauth2/openid/dex
+          redirectURI: https://dex.lab.zalsader.com/callback
+          issuer: https://auth.lab.zalsader.com/oauth2/openid/dex
           # TODO https://github.com/dexidp/dex/pull/3188
           # enablePKCE: true
           scopes:
@@ -27,12 +27,12 @@ dex:
       - id: grafana-sso
         name: Grafana
         redirectURIs:
-          - 'https://grafana.zalsader.com/login/generic_oauth'
+          - 'https://grafana.lab.zalsader.com/login/generic_oauth'
         secretEnv: GRAFANA_SSO_CLIENT_SECRET
       - id: gitea
         name: Gitea
         redirectURIs:
-          - 'https://git.zalsader.com/user/oauth2/Dex/callback'
+          - 'https://git.lab.zalsader.com/user/oauth2/Dex/callback'
         secretEnv: GITEA_CLIENT_SECRET
   envFrom:
     - secretRef:
@@ -43,7 +43,7 @@ dex:
     annotations:
       cert-manager.io/cluster-issuer: letsencrypt-prod
     hosts:
-      - host: &host dex.zalsader.com
+      - host: &host dex.lab.zalsader.com
         paths:
           - path: /
             pathType: ImplementationSpecific

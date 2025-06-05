@@ -5,7 +5,7 @@ grafana:
     annotations:
       cert-manager.io/cluster-issuer: letsencrypt-prod
     hosts:
-      - &host grafana.zalsader.com
+      - &host grafana.lab.zalsader.com
     tls:
       - secretName: grafana-general-tls
         hosts:
@@ -20,7 +20,7 @@ grafana:
   envFromSecret: grafana-secrets
   grafana.ini:
     server:
-      root_url: https://grafana.zalsader.com
+      root_url: https://grafana.lab.zalsader.com
     auth.generic_oauth:
       enabled: true
       allow_sign_up: true
@@ -28,6 +28,6 @@ grafana:
       client_id: grafana-sso
       client_secret: $__env{GRAFANA_SSO_CLIENT_SECRET}
       scopes: openid profile email groups
-      auth_url: https://dex.zalsader.com/auth
-      token_url: https://dex.zalsader.com/token
-      api_url: https://dex.zalsader.com/userinfo
+      auth_url: https://dex.lab.zalsader.com/auth
+      token_url: https://dex.lab.zalsader.com/token
+      api_url: https://dex.lab.zalsader.com/userinfo
