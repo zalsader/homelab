@@ -19,7 +19,7 @@ resource "cloudflare_tunnel" "homelab" {
 resource "cloudflare_record" "tunnel" {
   zone_id = data.cloudflare_zone.zone.id
   type    = "CNAME"
-  name    = "homelab-tunnel.lab"
+  name    = "homelab-tunnel"
   value   = "${cloudflare_tunnel.homelab.id}.cfargotunnel.com"
   proxied = false
   ttl     = 1 # Auto
