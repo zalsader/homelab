@@ -61,7 +61,7 @@ app-template:
         services.yaml: |
           - Popular:
             - Matrix:
-                href: https://chat.lab.zalsader.com
+                href: https://chat.zalsader.com
                 description: Chat client
                 icon: element.svg
             - Jellyfin:
@@ -120,7 +120,7 @@ app-template:
                 icon: grafana.svg
           - Utilities:
             - Excalidraw:
-                href: https://draw.lab.zalsader.com
+                href: https://draw-lab.zalsader.com
                 description: Virtual whiteboard
                 icon: excalidraw.svg
             - Speedtest:

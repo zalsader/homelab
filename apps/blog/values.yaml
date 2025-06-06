@@ -21,7 +21,7 @@ app-template:
         external-dns.alpha.kubernetes.io/target: homelab-tunnel.zalsader.com
         external-dns.alpha.kubernetes.io/cloudflare-proxied: 'true'
       hosts:
-        - host: &host www.lab.zalsader.com
+        - host: &host lab.zalsader.com
           paths:
             - path: /
               pathType: Prefix
