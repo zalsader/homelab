@@ -132,6 +132,9 @@ app-template:
             - Documentation:
               - href: https://homelab.lab.zalsader.com
                 icon: google-docs.svg
+            - Personal homelab repository:
+              - href: https://github.com/zalsader/homelab
+                icon: github.svg
             - Public homelab repository:
               - href: https://github.com/khuedoan/homelab
                 icon: github.svg
@@ -144,14 +147,5 @@ app-template:
                 icon: terraform.svg
           - Infrastructure:
             - Router:
-              - href: https://192.168.1.1
+              - href: https://192.168.0.1
                 icon: router.svg
-            - Proxmox:
-              - href: https://proxmox:8006
-                icon: proxmox.svg
-            - Google Cloud:
-              - href: https://console.cloud.google.com
-                icon: google-cloud-platform.svg
-            - Oracle Cloud:
-              - href: https://cloud.oracle.com
-                icon: oracle-cloud.svg
