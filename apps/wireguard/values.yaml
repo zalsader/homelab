@@ -58,32 +58,3 @@ app-template:
                   # https://lists.zx2c4.com/pipermail/wireguard/2018-December/003703.html
 
                   # Servers
-
-                  [Peer]
-                  # homelab
-                  PublicKey = sSAZS1Z3vB7Wx8e2yVqXfeHjgWTa80wnSYoma3mZkiU=
-                  AllowedIPs = 172.16.0.1/32, 192.168.1.100/32, 192.168.1.224/27
-
-                  [Peer]
-                  # horus
-                  PublicKey = zVwYqwvGn/IL7o6CD84y4/Y/OnRAUl/jw6T7DtNqWGM=
-                  Endpoint = horus.lab.zalsader.com:51820
-                  PersistentKeepalive = 25
-                  AllowedIPs = 172.16.0.2/32
-
-                  # Clients
-
-                  [Peer]
-                  # khuedoan-ryzentower
-                  PublicKey = qnDY23ZWUOlCRUmB8anpXH1uzX0A17F1YtQJmVi7GWM=
-                  AllowedIPs = 172.16.0.10/32
-
-                  [Peer]
-                  # khuedoan-thinkpadz13
-                  PublicKey = hSVWn2lBasJeueHApQYmYR0s2zNpXrqZX6F8gyEqpy0=
-                  AllowedIPs = 172.16.0.11/32
-
-                  [Peer]
-                  # khuedoan-phone
-                  PublicKey = nITHFdgTkNZOTWeSWqnGXjgwlCJMKRCnnUsjMx2yp2U=
-                  AllowedIPs = 172.16.0.12/32
